@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_orange"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="25dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            tools:ignore="NestedWeights" />
+
+        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+            android:id="@+id/dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:dotsColor="@color/main_grey"
+            app:dotsCornerRadius="8dp"
+            app:dotsSize="10dp"
+            app:dotsSpacing="3dp"
+            app:dotsWidthFactor="2.5"
+            app:selectedDotColor="@color/white"
+            app:progressMode="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/sheet_menu"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="25dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_rounded_corner_green"
+            app:backgroundTint="@null"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:layout_margin="7dp"
+            android:textSize="18sp"
+            android:text="@string/get_started"/>
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_rounded_corner_grey"
+            app:backgroundTint="@null"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:layout_margin="7dp"
+            android:textSize="18sp"
+            android:text="@string/login"/>
+
+    </LinearLayout>
+
+</LinearLayout>

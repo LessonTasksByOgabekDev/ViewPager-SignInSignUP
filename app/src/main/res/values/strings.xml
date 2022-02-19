@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SignIn - SignUp</string>
+    <string name="get_started">Get Started</string>
+    <string name="all_your_favourite_dishes">All Your Favourite Dishes</string>
+    <string name="details">Order from your nearby best restaurants in the town\nYou can easily order from anywhere, anytime</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="sign_up_to_continue">Sign up to continue</string>
+    <string name="name">Name</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="email">email</string>
+    <string name="password">Password</string>
+    <string name="sign_in_account">Sign in Account</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="sign_in">Sign in</string>
+    <string name="don_t_you_have_an_account">Don\'t you have an account?</string>
+    <string name="sign_up">Sign up</string>
+</resources>
